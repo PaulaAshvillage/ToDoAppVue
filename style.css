@@ -1,0 +1,86 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-red: #d1a9b8;
+  --medium-red: #b27595;
+  --medium-blue: #3e6cc7;
+  --dark-blue: #3b5faa;
+  --light-blue: #6e9af4;
+  --gray: #63676c;
+}
+html {
+  font-family: monospace;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+input,
+button {
+  font-size: inherit;
+}
+header {
+  background-color: var(--medium-blue);
+  color: var(--light-red);
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+main {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  background-color: var(--light-red);
+  color: var(--dark-blue);
+}
+#div-all-filter {
+  padding-bottom: 1rem;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-left: 0.5rem;
+
+  accent-color: var(--dark-blue);
+}
+#input-todo {
+  border-radius: 0.25rem;
+  border: none;
+  color: var(--light-red);
+  background-color: var(--dark-blue);
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding-block: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input::placeholder {
+  color: var(--light-red);
+  font-family: monospace;
+  font-size: 0.8rem;
+  letter-spacing: -1px;
+}
+
+button {
+  border-radius: 0.25rem;
+  padding-block: 0.25rem;
+  border: none;
+  background-color: var(--medium-blue);
+  color: var(--light-red);
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+#delete-done-btn {
+  border: 1.5px solid;
+}
+
+ul {
+  padding-left: 0;
+  height: 800px;
+}
+li {
+  list-style: none;
+  font-size: 0.85rem;
+  padding: 0.5rem 0rem 0.5rem 0.2rem;
+}
