@@ -9,8 +9,8 @@ The list of features is ordered by descending priority.
 
 **Must Have Features 😊**
 
-- [ ] Todos can be added using the add button
-- [ ] List all added todos
+- [x] Todos can be added using the add button
+- [x] List all added todos
 - [ ] Added todos can be marked as done
 
 **Nice To Have Features 😏**
