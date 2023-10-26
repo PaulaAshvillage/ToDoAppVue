@@ -62,6 +62,12 @@ input::placeholder {
   letter-spacing: -1px;
 }
 
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  border: none;
+  background-color: var(--medium-red);
+}
 button {
   border-radius: 0.25rem;
   padding-block: 0.25rem;

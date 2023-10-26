@@ -2,7 +2,7 @@ Vue.createApp({
   data() {
     return {
       newToDo: "",
-
+      filterOption: "all",
       toDos: [
         {
           description: "Beispiel 1",
@@ -19,15 +19,21 @@ Vue.createApp({
   },
   methods: {
     addToDo(todoItem) {
-      let ToDo = {
-        description: todoItem,
-        id: Object.keys(this.toDos).length + 1,
-        done: false,
-      };
-
-      console.log(ToDo);
-      this.newToDo = "";
-      return this.toDos.push(ToDo);
+      if (todoItem.length > 4) {
+        let ToDo = {
+          description: todoItem,
+          id: Object.keys(this.toDos).length + 1,
+          done: false,
+        };
+        this.newToDo = "";
+        return this.toDos.push(ToDo);
+      } else {
+        alert("Mindestens 5 Zeichen");
+      }
+    },
+    deleteDone() {
+      let removedDoneToDos = this.toDos.filter((toDo) => !toDo.done);
+      this.toDos = removedDoneToDos;
     },
   },
 }).mount("#app");
